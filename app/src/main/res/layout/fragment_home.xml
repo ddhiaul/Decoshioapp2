@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framehome"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Customer.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:layout_marginTop="@dimen/padding_4"
+                android:layout_marginRight="@dimen/padding_8"
+                android:layout_marginBottom="@dimen/padding_4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/search_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/padding_8"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edit_search" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_help"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_8"
+                        android:layout_marginRight="@dimen/padding_8"
+                        android:src="@drawable/ic_help_outline_darked_35dp" />
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/padding_8"
+                        android:background="@drawable/ic_email_darked_35dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_4"
+                        android:layout_marginBottom="@dimen/padding_4"
+                        app:cardCornerRadius="@dimen/padding_32">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_profile">
+
+                            <TextView
+                                android:id="@+id/tv_name_cate_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_16"
+                                android:layout_marginTop="@dimen/padding_16"
+                                android:layout_marginRight="@dimen/padding_16"
+                                android:layout_marginBottom="@dimen/padding_8"
+                                android:text="@string/wedding"
+                                android:textSize="@dimen/title_size_32"
+                                android:textStyle="bold" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/tv_detail_cate_wedding"-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_below="@id/tv_name_cate_home"-->
+                            <!--                            android:layout_marginLeft="@dimen/padding_16"-->
+                            <!--                            android:layout_marginRight="@dimen/padding_16"-->
+                            <!--                            android:text="@string/detail_cat_wedding"-->
+                            <!--                            android:textSize="@dimen/title_size_16" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_wedding"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="@dimen/padding_16"
+                                    android:layout_marginBottom="@dimen/padding_8"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_button"
+                                    android:text="@string/lihat"
+                                    android:textSize="@dimen/title_size_16" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_4"
+                        android:layout_marginBottom="@dimen/padding_4"
+                        app:cardCornerRadius="@dimen/padding_32">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_profile">
+
+                            <TextView
+                                android:id="@+id/tv_name_cate_party"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_16"
+                                android:layout_marginTop="@dimen/padding_16"
+                                android:layout_marginRight="@dimen/padding_16"
+                                android:layout_marginBottom="@dimen/padding_8"
+                                android:text="@string/party"
+                                android:textSize="@dimen/title_size_32"
+                                android:textStyle="bold" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/tv_detail_cate_party"-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_below="@id/tv_name_cate_party"-->
+                            <!--                            android:layout_marginLeft="@dimen/padding_16"-->
+                            <!--                            android:layout_marginRight="@dimen/padding_16"-->
+                            <!--                            android:text="@string/detail_cat_party"-->
+                            <!--                            android:textSize="@dimen/title_size_16" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_party"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="@dimen/padding_16"
+                                    android:layout_marginBottom="@dimen/padding_8"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_button"
+                                    android:text="@string/lihat"
+                                    android:textSize="@dimen/title_size_16" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_4"
+                        android:layout_marginBottom="@dimen/padding_4"
+                        app:cardCornerRadius="@dimen/padding_32">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_profile">
+
+                            <TextView
+                                android:id="@+id/tv_name_cate_camp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_16"
+                                android:layout_marginTop="@dimen/padding_16"
+                                android:layout_marginRight="@dimen/padding_16"
+                                android:layout_marginBottom="@dimen/padding_8"
+                                android:text="@string/cat_menu_camp"
+                                android:textSize="@dimen/title_size_32"
+                                android:textStyle="bold" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/tv_detail_cate_camp"-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_below="@id/tv_name_cate_camp"-->
+                            <!--                            android:layout_marginLeft="@dimen/padding_16"-->
+                            <!--                            android:layout_marginRight="@dimen/padding_16"-->
+                            <!--                            android:text="@string/detail_cat_camp"-->
+                            <!--                            android:textSize="@dimen/title_size_16" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_camp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="@dimen/padding_16"
+                                    android:layout_marginBottom="@dimen/padding_8"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_button"
+                                    android:text="@string/lihat"
+                                    android:textSize="@dimen/title_size_16" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_4"
+                        android:layout_marginBottom="@dimen/padding_4"
+                        app:cardCornerRadius="@dimen/padding_32">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_profile">
+
+                            <TextView
+                                android:id="@+id/tv_name_cate_graduate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding_16"
+                                android:layout_marginTop="@dimen/padding_16"
+                                android:layout_marginRight="@dimen/padding_16"
+                                android:layout_marginBottom="@dimen/padding_8"
+                                android:text="@string/cat_menu_graduate"
+                                android:textSize="@dimen/title_size_32"
+                                android:textStyle="bold" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:id="@+id/tv_detail_cate_graduate"-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_below="@id/tv_name_cate_graduate"-->
+                            <!--                            android:layout_marginLeft="@dimen/padding_16"-->
+                            <!--                            android:layout_marginRight="@dimen/padding_16"-->
+                            <!--                            android:text="@string/detail_cat_graduate"-->
+                            <!--                            android:textSize="@dimen/title_size_16" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_graduate"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="@dimen/padding_16"
+                                    android:layout_marginBottom="@dimen/padding_8"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_button"
+                                    android:text="@string/lihat"
+                                    android:textSize="@dimen/title_size_16" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

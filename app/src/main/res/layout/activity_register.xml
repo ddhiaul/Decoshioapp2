@@ -32,14 +32,31 @@
         android:hint="@string/Username"
         android:inputType="textEmailAddress" />
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_pass_reg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/et_email_reg"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text"
         android:hint="@string/email"
         android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/et_sebagai"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_20"
+        android:background="@drawable/edit_text"
+        android:hint="@string/as_cust_or_prov"
+        android:inputType="text"/>
     <Button
+        android:id="@+id/btn_reg"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_16"
